@@ -94,10 +94,10 @@
 		228D474B19F5DA9F00DE9903 /* Photo Map */ = {
 			isa = PBXGroup;
 			children = (
+				228D475219F5DA9F00DE9903 /* Main.storyboard */,
 				22BB9BD319F5DCE9000048C2 /* Views */,
 				228D476E19F5DAA800DE9903 /* View Controllers */,
 				228D474E19F5DA9F00DE9903 /* AppDelegate.swift */,
-				228D475219F5DA9F00DE9903 /* Main.storyboard */,
 				228D475519F5DA9F00DE9903 /* Images.xcassets */,
 				228D475719F5DA9F00DE9903 /* LaunchScreen.xib */,
 				228D474C19F5DA9F00DE9903 /* Supporting Files */,
