@@ -22,18 +22,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-e2-4GN">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dvI-e2-4GN">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lg-X5-fsD">
-                                <rect key="frame" x="137" y="533" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lg-X5-fsD">
+                                <rect key="frame" x="137" y="568" width="100" height="64"/>
                                 <color key="backgroundColor" red="0.80897830310880825" green="0.80897830310880825" blue="0.80897830310880825" alpha="0.57529159330985913" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0HX-Sj-XuB"/>
+                                </constraints>
                                 <state key="normal" image="camera"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="50"/>
+                                        <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -42,6 +43,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dvI-e2-4GN" secondAttribute="trailing" id="2v3-hA-LvZ"/>
+                            <constraint firstItem="ufw-e1-uLx" firstAttribute="top" secondItem="dvI-e2-4GN" secondAttribute="bottom" id="7dQ-G2-F3Y"/>
+                            <constraint firstItem="ufw-e1-uLx" firstAttribute="top" secondItem="9lg-X5-fsD" secondAttribute="bottom" constant="35" id="7mX-Oy-tqf"/>
+                            <constraint firstItem="dvI-e2-4GN" firstAttribute="leading" secondItem="Lxe-6f-KEH" secondAttribute="leading" id="Og2-wJ-q5f"/>
+                            <constraint firstItem="dvI-e2-4GN" firstAttribute="top" secondItem="vrG-Wc-0bn" secondAttribute="bottom" id="QUJ-33-O5s"/>
+                            <constraint firstItem="9lg-X5-fsD" firstAttribute="centerX" relation="lessThanOrEqual" secondItem="dvI-e2-4GN" secondAttribute="centerX" id="xHL-VJ-acw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aPF-0T-Ydb"/>
                     <connections>
@@ -144,10 +153,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BsJ-w6-1O2" firstAttribute="top" secondItem="erf-MR-Y0D" secondAttribute="top" id="JD7-XZ-z8n"/>
+                            <constraint firstAttribute="trailing" secondItem="BsJ-w6-1O2" secondAttribute="trailing" id="L2C-Em-Y0w"/>
                             <constraint firstItem="BsJ-w6-1O2" firstAttribute="leading" secondItem="erf-MR-Y0D" secondAttribute="leading" id="UGF-Xv-O57"/>
                             <constraint firstItem="nWs-YP-WbV" firstAttribute="top" secondItem="BsJ-w6-1O2" secondAttribute="bottom" id="bOA-GS-Qal"/>
                             <constraint firstItem="BsJ-w6-1O2" firstAttribute="top" secondItem="erf-MR-Y0D" secondAttribute="top" id="cIC-L1-LgO"/>
+                            <constraint firstItem="nWs-YP-WbV" firstAttribute="top" secondItem="BsJ-w6-1O2" secondAttribute="bottom" id="dpb-mC-yty"/>
                             <constraint firstAttribute="trailing" secondItem="BsJ-w6-1O2" secondAttribute="trailing" id="jze-mB-Twx"/>
+                            <constraint firstItem="BsJ-w6-1O2" firstAttribute="leading" secondItem="erf-MR-Y0D" secondAttribute="leading" id="ycA-we-ySw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Location" id="cFw-mk-Xuq"/>

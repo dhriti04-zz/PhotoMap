@@ -89,15 +89,18 @@ extension PhotoMapViewController: MKMapViewDelegate {
         let reuseID = "myAnnotationView"
         
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseID)
+        annotationView?.image = myImage
         if (annotationView == nil) {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseID)
             
             annotationView!.canShowCallout = true
             annotationView!.leftCalloutAccessoryView = UIImageView(frame: CGRect(x:0, y:0, width: 50, height:50))
         }
+        
     
         let imageView = annotationView?.leftCalloutAccessoryView as! UIImageView
         imageView.image = UIImage(named: "camera")
+
         
         return annotationView
     }
